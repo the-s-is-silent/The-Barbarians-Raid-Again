@@ -18,9 +18,7 @@
 		"rangedStrength": 20,
 		"range": 1,
 		"cost": 25,
-		"uniques": ["Unbuildable", 
-					"Invisible to non-adjacent units", 
-					"[+1] Sight"],
+		"uniques": ["Unbuildable", "Invisible to non-adjacent units", "[+1] Sight"],
 		"promotions": ["Ignore terrain cost"],
 		"attackSound": "nonmetalhit"
 	},
@@ -35,9 +33,27 @@
 		"cost": 150,
 		"requiredTech": "Gunpowder",
 		"uniques": ["[+400]% Strength <vs cities> <when attacking>", 
-					"Can only attack [City] units", 
-					"Self-destructs when attacking",
-					"Earn [33]% of the damage done to [City] units as [Gold]"],
+			"Can only attack [City] units", 
+			"Self-destructs when attacking",
+			"Earn [33]% of the damage done to [City] units as [Gold]"],
 		"attackSound": "shot"
-	}
+	},
+	{
+		"name": "Warchief",
+		"unitType": "Mounted",
+		"replaces": "Great General",
+		"uniqueTo": "Barbarians",
+		"movement": 4,
+		"strength": 16,
+		"cost": 75,
+		"requiredTech": "Horseback Riding",
+		"uniques": ["[+15]% Strength bonus for [Military] units within [2] tiles",
+			"[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
+			"Can instantly construct a [Barbarian encampment] improvement <[4] times>",
+			"[+50]% Strength <during the [Medieval era]>",
+			"[+50]% Strength <starting from the [Renaissance era]>",
+			"Uncapturable",
+			"Limited to [5] per Civilization"],
+		"attackSound": "horse"
+	},
 ]
